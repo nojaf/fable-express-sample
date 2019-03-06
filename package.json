@@ -1,0 +1,17 @@
+{
+  "name": "fable-express-sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.2.0",
+    "fable-compiler": "^2.1.12",
+    "fable-splitter": "^2.1.5"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "scripts": {
+    "build": "fable-splitter -c splitter.config.js"
+  }
+}

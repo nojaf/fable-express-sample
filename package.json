@@ -9,9 +9,13 @@
     "fable-splitter": "^2.1.5"
   },
   "dependencies": {
-    "express": "^4.16.4"
+    "@babel/core": "^7.3.4",
+    "express": "^4.16.4",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
   },
   "scripts": {
-    "build": "fable-splitter -c splitter.config.js"
+    "build": "fable-splitter -c splitter.config.js",
+    "start": "fable-splitter -c splitter.config.js -w --run"
   }
 }

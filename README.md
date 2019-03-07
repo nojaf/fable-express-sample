@@ -1,9 +1,10 @@
 > yarn build
+
 > yarn start
+
+> yarn browser-sync start -c .\bs-config.js
 
 TODO
 
-- browser-sync?
 - reverse proxy nginx / docker?
-- static files
 - project structure (layout / views)

@@ -3,5 +3,8 @@ module.exports = {
     outDir: "out",
     babel: {
         "plugins": ["@babel/plugin-transform-modules-commonjs"]
+    },
+    fable: {
+        define: ["DEBUG"]
     }
   };

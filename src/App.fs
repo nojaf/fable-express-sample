@@ -22,7 +22,7 @@ let view () =
         body [] [
             main [] [
                 h1 [] [str "Birmingham Express 2019!"]
-               // img [Src "/be19/batman.jpg"]
+                img [Src "/be19/batman.jpg"]
                 br []
             ]
             script [Id "__bs_script__"] [ str """//<![CDATA[document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.3'><\/script>".replace("HOST", location.hostname));//]]"""]
@@ -41,6 +41,6 @@ app.get (!^ rootUrl, (fun _ (res: express.Response) _ ->
 app.listen(port, fun _ -> 
     printfn "server started on %i" port
     #if DEBUG
-    http.get("http://localhost:3000/__browser_sync__?method=reload")
+    // http.get("http://localhost:3000/__browser_sync__?method=reload")
     #endif
 ) |> ignore

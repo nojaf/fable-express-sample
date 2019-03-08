@@ -7,7 +7,8 @@
     "@babel/plugin-transform-modules-commonjs": "^7.2.0",
     "browser-sync": "^2.26.3",
     "fable-compiler": "^2.1.12",
-    "fable-splitter": "^2.1.5"
+    "fable-splitter": "^2.1.5",
+    "pkg": "^4.3.7"
   },
   "dependencies": {
     "@babel/core": "^7.3.4",
@@ -18,5 +19,13 @@
   "scripts": {
     "build": "fable-splitter -c splitter.config.js",
     "start": "fable-splitter -c splitter.config.js -w --run"
+  },
+  "bin": "out/App.js",
+  "pkg": {
+    "scripts": "out/**/*.js",
+    "assets": "public/**/*",
+    "targets": [
+      "node10"
+    ]
   }
 }
